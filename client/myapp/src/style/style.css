@@ -1,0 +1,157 @@
+*{margin: 0;padding: 0;}
+
+.login, .register, .createcomapany{
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form, .register form, .createcomapany form{
+    width: 30%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px rgb(68, 66, 66);
+}
+
+.login form, .createcomapany form{
+    height: 40%;
+}
+
+.register form{
+    height: 75%;
+}
+
+.login input, .login button, .register input, .register button, .createcomapany input, .createcomapany button{
+    width: 70%;
+    height: 25px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 2px black solid;
+    box-shadow: 0 0 10px #007bff;
+}
+
+.login button, .register button, .createcomapany button{
+    /* padding: 10px; */
+    height: 40px;
+    background-color: rgb(14, 216, 41);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register .radio{
+    display: flex;
+    /* background-color: tomato; */
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.register .radio .radiobtn .admin, .register .radio .radiobtn .user{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.register .radio .radiobtn .admin input, .register .radio .radiobtn .admin input{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* company List */
+.list{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+    width: 90%;
+    height: 80vh;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .styled-table thead tr {
+    background-color: #007bff; 
+    color: #ffffff; 
+    text-align: center;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px 15px; 
+    text-align: center;
+
+  }
+  
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd; 
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #f1f1f1; 
+  }
+  
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9; 
+  }
+  
+  .styled-table tbody tr td button {
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    padding: 8px 12px; 
+        border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .styled-table tbody tr td button:hover {
+    background-color: #218838; 
+    cursor: pointer;
+  }
+  
+  .styled-table tbody tr td a {
+    text-decoration: none; 
+    color: #007bff; 
+  }
+  
+  .styled-table tbody tr td a:hover {
+    text-decoration: underline; 
+  }
+  
+.style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.style #a{
+    font-size: larger;
+    width: 200px;
+    background-color: #218838;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bolder;
+    color: antiquewhite;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
