@@ -13,7 +13,7 @@ const EditCompany = () => {
   })
 
   useEffect(()=>{
-    fetch(`http://localhost:3001/company/${c_id}`)
+    fetch(`https://incomparable-jelly-3710a6.netlify.app//company/${c_id}`)
     .then(res => res.json())
     .then(data => setCompany(data))
     .catch(err => console.log(err))
@@ -28,7 +28,7 @@ const EditCompany = () => {
       username : edit.current[2].value
     }
 
-    fetch(`http://localhost:3001/company/${c_id}`, {
+    fetch(`https://incomparable-jelly-3710a6.netlify.app//${c_id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
