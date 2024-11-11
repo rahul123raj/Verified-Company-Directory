@@ -2,11 +2,13 @@ let express = require('express')
 let mongoose = require('mongoose')
 let cors = require('cors')
 
+require("dotenv").config()
+
 const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://Rahul:12345@cluster0.n3vir.mongodb.net/company_management')
+mongoose.connect(process.env.MONGO_URL)
 
   //! register
 const userSchema = new mongoose.Schema({
@@ -163,7 +165,7 @@ app.put('/approve/:id', async (req, res) => {
   }
 });
 
-
-app.listen(3001,()=>{
+const PORT = process.env.PORT
+app.listen(PORT,()=>{
     console.log('server is running')
 })
