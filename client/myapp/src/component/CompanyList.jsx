@@ -8,7 +8,7 @@ const CompanyList = () => {
   let [companies, setCompany] = useState([])
 
   useEffect(()=>{
-    fetch(`http://localhost:3001/company`)
+    fetch(`https://incomparable-jelly-3710a6.netlify.app//company`)
     .then(res => res.json())
     .then(data => setCompany(data))
     .catch(err => console.log(err))
@@ -18,7 +18,7 @@ const CompanyList = () => {
   let { uid } = useParams();
   
   useEffect(() => {
-    fetch(`http://localhost:3001/normaluser/${uid}`)
+    fetch(`https://incomparable-jelly-3710a6.netlify.app//normaluser/${uid}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error('Failed to fetch user data');
@@ -54,7 +54,7 @@ const CompanyList = () => {
 
   //! Delete btn
   let handleDelete = (id) =>{
-    fetch(`http://localhost:3001/company/${id}`,{
+    fetch(`https://incomparable-jelly-3710a6.netlify.app//company/${id}`,{
       method : 'Delete'
     })
     .then(res => res.json())
@@ -72,7 +72,7 @@ let handleApprove = (id) => {
     status: 'approved', // This will be sent to the server
   };
 
-  fetch(`http://localhost:3001/approve/${id}`, {
+  fetch(`https://incomparable-jelly-3710a6.netlify.app//approve/${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
