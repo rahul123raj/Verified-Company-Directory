@@ -20,7 +20,7 @@ const Register = () => {
             mobile : register.current[6].value
         }
 
-        fetch(`http://localhost:3001/register`,{
+        fetch(`https://incomparable-jelly-3710a6.netlify.app//register`,{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(user)
