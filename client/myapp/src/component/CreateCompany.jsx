@@ -19,7 +19,7 @@ const CreateCompany = () => {
             status : bool ? 'approved' : 'unapproved'
         }
 
-        fetch('http://localhost:3001/company',{
+        fetch('https://incomparable-jelly-3710a6.netlify.app//company',{
             method : 'POST',
             headers : {'content-type' : 'application/json'},
             body: JSON.stringify(company)
